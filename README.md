@@ -5,7 +5,6 @@
     [GeenDao如何使用](http://greendao-orm.com/documentation/how-to-get-started/) <br/>
     [GeenDao的GitHub下载地址](https://github.com/greenrobot/greenDAO)<br/>
     
-    看了一些GeenDao的使用介绍文章，发现其优势，但是也发现要利用其生成持久层代码比较麻烦，需要县编写Java类来描述我们的表结构。
-  如果表少到还是好，但是如果表比较多，编写Java代码可能出错，也不容易理清表与表之间的关系。最近没事，就想整理一下，把GeenDao需要编写的
+  看了一些GeenDao的使用介绍文章，发现其优势，但是也发现要利用其生成持久层代码比较麻烦，需要县编写Java类来描述我们的表结构。如果表少到还是好，但是如果表比较多，编写Java代码可能出错，也不容易理清表与表之间的关系。最近没事，就想整理一下，把GeenDao需要编写的
   Java代码想找一个什么东西替换，所以想用到XML描述。虽然也少不了写代码，但是有了键值对，表与表之间的关系还是很容易看出来。
   要了解我这个GreenDao工具，要先了解GeenDao是什么，是干嘛用的。<br/>
