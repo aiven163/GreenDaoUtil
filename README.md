@@ -52,7 +52,7 @@
     					<notNull>true</notNull>
     					<unique>true</unique>
     				</column>
-    				<column name="blong">
+    				<column name="belong">
     					<type>Long</type>
     					<notNull>true</notNull>
     					<foreignKey>true</foreignKey>
@@ -63,3 +63,7 @@
     	</Tables>
     </Db>
     ```
+    对于这个xml文件中的各个字段描述，需要的朋友可以下载后查看doc文档，里面有详细的介绍。生成成功后会有对应的Java类生成:<br/>
+      ![](https://github.com/aiven163/GreenDaoUtil/blob/master/sceen_shot/shot2.png)  <br>
+      
+ 这里面生成了对应的数据库 操作类和对应的Java Bean实体类。至于怎么应用到Android项目中，就去看GreenDao的API吧
