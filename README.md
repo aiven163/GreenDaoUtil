@@ -11,5 +11,55 @@
   
   #使用
   
-  首先来看看工具的面貌
-  ![](https://github.com/aiven163/GreenDaoUtil/blob/master/sceen_shot/short1.png)
+  首先来看看工具的面貌<br/>
+  ![](https://github.com/aiven163/GreenDaoUtil/blob/master/sceen_shot/short1.png)  <br>
+  
+  ###具体应用如下:<br>
+  
+  * 编写数据库表关系描述文件,我这里给一个例子(消费者与订单关系表)<br/>
+    ```Xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <Db>
+    	<version>1</version>	
+    	<outPath>D://out</outPath>
+    	<package>com.aiven</package>
+    	<Tables>
+    			<table name="Customer">
+    					<column name="CustId">
+    						<type>Long</type>
+    						<primaryKey>true</primaryKey>
+    						<autoIncreament>true</autoIncreament>
+    					</column>
+    					<column name="nick">
+    						<type>String</type>
+    						<notNull>true</notNull>
+    						<unique>true</unique>
+    					</column>		
+    					<column name="telephoneNum">
+    						<type>String</type>
+    						<unique>true</unique>
+    					</column>
+    			</table>
+    			
+    			<table name="Order">
+    				<column name="id">
+    					<type>Long</type>
+    					<primaryKey>true</primaryKey>
+    					<autoIncreament>true</autoIncreament>
+    				</column>
+    				<column name="orderNum">
+    					<type>String</type>	
+    					<notNull>true</notNull>
+    					<unique>true</unique>
+    				</column>
+    				<column name="blong">
+    					<type>Long</type>
+    					<notNull>true</notNull>
+    					<foreignKey>true</foreignKey>
+    					<foreignKeyTable>Customer</foreignKeyTable>
+    					<foreignKeyColumn>CustId</foreignKeyColumn>
+    				</column>
+    			</table>
+    	</Tables>
+    </Db>
+    ```
