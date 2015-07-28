@@ -1,9 +1,6 @@
 # GreenDaoUtil
 
-    在我们做Android开发的时候经常会用到数据库，我想很多人都知道，每每用到数据库，对其的操作就是一个让人头大的问题，
-  如果我们自行编写一个类来操作数据库，那么我们就需要编写各种增删改查方法，甚至数据库的管理，很容易出现各种奇葩的问题，也很难控制。
-  所以网上出现了很多开源的Sqlite工具库，比如FinalDB、AHibernat、Sqlite ORM 、GreenDao 等等，绝大部分的实现方式都差不多。但综合操作
-  和性能效率上来看，GreenDao稍微好一点。<br>
+  在我们做Android开发的时候经常会用到数据库，我想很多人都知道，每每用到数据库，对其的操作就是一个让人头大的问题，如果我们自行编写一个类来操作数据库，那么我们就需要编写各种增删改查方法，甚至数据库的管理，很容易出现各种奇葩的问题，也很难控制。所以网上出现了很多开源的Sqlite工具库，比如FinalDB、AHibernat、Sqlite ORM 、GreenDao 等等，绝大部分的实现方式都差不多。但综合操作和性能效率上来看，GreenDao稍微好一点。<br>
     对于GreenDao的介绍请看官网:<bt/>
     [GeenDao如何使用](http://greendao-orm.com/documentation/how-to-get-started/) <br/>
     [GeenDao的GitHub下载地址](https://github.com/greenrobot/greenDAO)<br/>
